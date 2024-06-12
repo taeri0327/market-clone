@@ -25,7 +25,25 @@ body {
   color: white;
 }
 
+.media-info-msg_chat {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  top: -10px;
+  color: white;
+  z-index: 5;
+}
+
 .media-info-msg img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.media-info-msg_chat img {
   width: 50px;
   margin-right: 10px;
 }
@@ -35,5 +53,32 @@ body {
     opacity: 1;
     background-color: red;
     z-index: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .media-info-msg_chat {
+    opacity: 1;
+    background-color: orange;
+    z-index: 0;
+  }
+}
+
+/* 뒤로가기버튼-alert */
+.back-icon__alertbox {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  opacity: 0;
+  padding: 10px 20px;
+}
+
+.back-icon__alert {
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .back-icon__alertbox {
+    opacity: 1;
   }
 }

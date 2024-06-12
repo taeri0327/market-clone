@@ -42,3 +42,24 @@ footer {
 .footer-icons:hover img {
   animation: 2s icons-둥둥;
 }
+
+/* chatting footer */
+.footer-chat {
+  background-color: #f2f3f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-chatting {
+  background-color: white;
+  width: 80%;
+  border-radius: 20px;
+  color: #b7b8b9;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  line-height: 20px;
+  align-items: center;
+  padding-left: 10px;
+}

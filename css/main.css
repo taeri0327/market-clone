@@ -68,3 +68,110 @@ item-list__info div:first-child {
   border: var(--button-hover);
   color: var(--button-hover);
 }
+
+/* chatting-main */
+.chat-main {
+  padding: 10px 10px;
+}
+.talk-list {
+  display: flex;
+  padding-top: 150px;
+}
+
+.talk-list__time {
+  font-size: 12px;
+  color: #b7b8b9;
+  width: 70px;
+  padding-right: 5px;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+.talk-list__talk {
+  background-color: #fc6e08;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  line-height: 25px;
+  border-top-right-radius: 0px;
+}
+
+.talk-list2 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.talk-list2__img img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.talk-list2__talk {
+  background-color: #eaebef;
+  border-radius: 20px;
+  padding: 10px;
+  line-height: 25px;
+  border-top-left-radius: 0;
+}
+
+.talk-list2__time {
+  font-size: 12px;
+  color: #b7b8b9;
+  width: 70px;
+  padding-left: 5px;
+  display: flex;
+  align-items: end;
+  justify-content: left;
+}
+
+.promise-deal {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #eaebef;
+  margin: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.promise-deal__chain {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.promise-deal__chain img {
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 1px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.promise-deal__time {
+  font-weight: bold;
+}
+
+.promise-deal__text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 85px;
+  width: 100%;
+  padding-right: 25px;
+  font-weight: bold;
+  color: #5d5d5d;
+}
+
+.notification {
+  color: #b7b8b9;
+  font-size: 12px;
+  text-align: center;
+}
