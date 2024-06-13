@@ -82,6 +82,7 @@ header {
 
 .chat-menu-bar .back-icon__basealertbox {
   opacity: 1;
+  cursor: pointer;
 }
 
 .chat-menu-bar .back-icon__basealert {
@@ -92,6 +93,10 @@ header {
   .chat-menu-bar .back-icon__basealertbox {
     opacity: 0;
   }
+}
+
+.chat-menu-bar img {
+  cursor: pointer;
 }
 
 .chat-menu-bar__icons {

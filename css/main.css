@@ -61,12 +61,19 @@ item-list__info div:first-child {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 1s ease-in-out;
+  display: block;
 }
 
 .write-button:hover {
   background-color: var(--button-primary);
   border: var(--button-hover);
   color: var(--button-hover);
+}
+
+@media (min-width: 500px) {
+  .write-button {
+    display: none;
+  }
 }
 
 /* chatting-main */
