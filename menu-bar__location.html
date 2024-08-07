@@ -11,10 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=uqfwoyckeg"
-    ></script>
   </head>
   <body>
     <header class="menu-bar__location-header">
@@ -35,7 +31,17 @@
 
     <main class="menu-bar__location-main">
       <div class="map-box">
-        <div id="map" style="width: 100%; height: 400px"></div>
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12661.36618287218!2d127.02837405872441!3d37.49986190289119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3ffa284bd21%3A0xdd44ca279199d5d5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5k!5e0!3m2!1sko!2skr!4v1723028144343!5m2!1sko!2skr"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </main>
 
@@ -93,14 +99,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var mapOptions = {
-        center: new naver.maps.LatLng(37.50084, 127.0355),
-        zoom: 10,
-      };
-
-      var map = new naver.maps.Map("map", mapOptions);
-    </script>
   </body>
 </html>

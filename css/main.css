@@ -77,10 +77,6 @@ item-list__info div:first-child {
   height: 500px;
 }
 
-.menu-bar__location-main .map-box div {
-  height: 100% !important;
-}
-
-#map div:nth-child(2) {
-  display: none;
+.menu-bar__location-main #map {
+  height: 100%;
 }
