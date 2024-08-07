@@ -32,12 +32,14 @@ header {
   display: flex;
   font-size: 16px;
   font-weight: bold;
-  width: 100px;
+  width: 80px;
+  cursor: pointer;
 }
 
 .menu-bar__location img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
 }
 .menu-bar__icons img {
   width: 22px;
