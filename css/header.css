@@ -32,8 +32,12 @@ header {
   display: flex;
   font-size: 16px;
   font-weight: bold;
-  width: 80px;
-  cursor: pointer;
+  width: 85px;
+}
+
+.menu-bar__location-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-bar__location img {
@@ -44,4 +48,29 @@ header {
 .menu-bar__icons img {
   width: 22px;
   margin-left: 5px;
+}
+
+/* menu-bar__location 헤더 */
+.menu-bar__location-header {
+  width: 100vw;
+  height: 50px;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px;
+}
+
+.menu-bar__location-headerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  height: 100%;
+}
+
+.menu-bar__location-header img {
+  width: 25px;
+}
+
+.menu-bar__location-headerdiv .titlebox {
+  font-weight: bold;
+  font-size: 18px;
 }
