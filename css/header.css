@@ -62,12 +62,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 40px 0 10px;
   height: 100%;
 }
 
 .menu-bar__location-header img {
   width: 25px;
+  cursor: pointer;
 }
 
 .menu-bar__location-headerdiv .titlebox {
