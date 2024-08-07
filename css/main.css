@@ -68,3 +68,15 @@ item-list__info div:first-child {
   border: var(--button-hover);
   color: var(--button-hover);
 }
+.menu-bar__location-main {
+  padding: 0;
+}
+
+.menu-bar__location-main .map-box {
+  width: 100%;
+  height: 500px;
+}
+
+.menu-bar__location-main .map-box div {
+  height: 100% !important;
+}
