@@ -1,0 +1,39 @@
+@import "reset.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+:root {
+  --button-primary: white;
+  --button-sub: #fc6e08;
+}
+
+body {
+  background-color: #feffff;
+  font-family: "Noto Sans KR";
+}
+
+.media-info-msg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  top: -10px;
+  color: white;
+}
+
+.media-info-msg img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+@media (min-width: 500px) {
+  .media-info-msg {
+    opacity: 1;
+    background-color: red;
+    z-index: 0;
+  }
+}
