@@ -17,23 +17,34 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+  display: block;
   top: -10px;
   color: white;
+  background-color: red;
+}
+
+.media-info-msg div {
+  padding-left: 30vw;
+  padding-top: 45vh;
 }
 
 .media-info-msg img {
   width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
 
-@media (min-width: 500px) {
+.media-info-msg span {
+  width: 500px;
+  margin-top: -30px;
+  font-weight: bold;
+  display: block;
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
   .media-info-msg {
-    opacity: 1;
-    background-color: red;
-    z-index: 0;
+    display: none;
   }
 }
