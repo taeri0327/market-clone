@@ -80,3 +80,7 @@ item-list__info div:first-child {
 .menu-bar__location-main .map-box div {
   height: 100% !important;
 }
+
+#map div:nth-child(2) {
+  display: none;
+}

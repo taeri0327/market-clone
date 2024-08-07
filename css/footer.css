@@ -114,9 +114,6 @@ footer {
   width: 100%;
 }
 
-.menu-bar__location-footer .range-top input {
-  /* accent-color: #ffca1d !important; */
-}
 .menu-bar__location-footer .range-bottom {
   width: 100%;
   display: flex;
