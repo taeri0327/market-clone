@@ -20,7 +20,7 @@ footer {
   cursor: pointer;
 }
 
-/* @keyframes icons-둥둥 {
+@keyframes icons-둥둥 {
   0% {
     transform: translateY(0px);
   }
@@ -33,12 +33,12 @@ footer {
   100% {
     transform: translateY(0px);
   }
-} */
+}
 
 .footer-icons img {
   width: 27px;
   margin-bottom: 10px;
 }
-/* .footer-icons:hover img {
+.footer-icons:hover img {
   animation: 2s icons-둥둥;
-} */
+}
