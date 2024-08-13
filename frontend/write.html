@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당근마켓 글쓰기</title>
+    <link rel="stylesheet" href="./css/write.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <form id="write-form">
+      <header>
+        <div class="header">
+          <div>
+            <a href="./index.html"
+              ><img src="./assets/X-mark.svg" alt="picture"
+            /></a>
+          </div>
+          <div><p>내 물건 팔기</p></div>
+          <div><p>임시 저장</p></div>
+        </div>
+      </header>
+      <main>
+        <div class="wrap-mainbox">
+          <div class="main-child">
+            <div class="img-box">
+              <img src="./assets/camera.svg" alt="picture" />
+
+              <label for="image" aria-placeholder="img">사진등록</label>
+              <div><input type="file" id="image" name="image" /></div>
+            </div>
+          </div>
+          <div class="main-child">
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" />
+          </div>
+          <div class="main-child">
+            <label for="price">가격</label>
+            <input type="number" id="price" name="price" />
+          </div>
+          <div class="main-child">
+            <label for="description">설명</label>
+            <textarea id="description" name="description"></textarea>
+          </div>
+          <div class="main-child">
+            <label for="place">장소</label>
+            <input type="text" id="place" name="place" />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <button type="submit">작성 완료</button>
+        </div>
+      </footer>
+    </form>
+    <script src="write.js"></script>
+  </body>
+</html>

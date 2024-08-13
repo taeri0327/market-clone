@@ -4,7 +4,7 @@ main {
 
 .item-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: center;
   border-bottom: 1px solid #ededef;
   padding: 20px 0;
@@ -19,11 +19,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .item-list__img img {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item-list__info {
@@ -47,7 +49,7 @@ item-list__info div:first-child {
   font-weight: bold;
 }
 
-.write-button {
+main .write-button {
   background-color: var(--button-sub);
   position: fixed;
   bottom: 95px;
@@ -61,6 +63,8 @@ item-list__info div:first-child {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 1s ease-in-out;
+  display: block;
+  text-decoration: underline rgba(255, 255, 255, 0);
 }
 
 .write-button:hover {

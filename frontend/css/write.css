@@ -1,0 +1,167 @@
+* {
+  font-family: "Noto Sans KR";
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  margin-left: -8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+header div {
+  width: 100px;
+  height: 30px;
+}
+
+header div img {
+  width: 30px;
+  cursor: pointer;
+}
+
+header div p {
+  margin: 0;
+  text-align: center;
+}
+
+header div:nth-child(2) p {
+  font-weight: bold;
+}
+
+header div:nth-child(3) p {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 50px;
+}
+
+.wrap-mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+
+.main-child:first-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.img-box label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding-top: 33px;
+  padding-left: 6px;
+  top: 0;
+  left: 0;
+}
+
+.img-box div {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: gray;
+}
+
+.img-box div input {
+  margin-left: -73px;
+  line-height: 50px;
+}
+
+.main-child:not(:first-child) {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 400px;
+}
+
+.main-child:not(:first-child) label {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main-child textarea {
+  height: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  background-color: #fc6e08;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  bottom: 10px;
+  cursor: pointer;
+}
