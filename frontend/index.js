@@ -55,7 +55,7 @@ const renderData = (data) => {
 
     const InfoPriceDiv = document.createElement("div");
     InfoPriceDiv.className = "item-list__info-price";
-    InfoPriceDiv.innerText = obj.price;
+    InfoPriceDiv.innerText = obj.price.toLocaleString("ko-KR") + "원";
 
     ImgDiv.appendChild(img);
     InfoDiv.appendChild(InfoTitleDiv);

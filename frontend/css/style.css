@@ -48,3 +48,23 @@ body {
     display: none;
   }
 }
+
+/* 뒤로가기버튼-alert */
+.back-icon__alertbox {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  display: none;
+  padding: 10px 20px;
+}
+
+.back-icon__alert {
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .back-icon__alertbox {
+    display: block;
+  }
+}

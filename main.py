@@ -2,7 +2,6 @@ from fastapi import FastAPI, UploadFile,Form,Response
 from fastapi.responses import JSONResponse
 #JSON타입으로 인코더
 from fastapi.encoders import jsonable_encoder
-# import Form #->터미널에 pip install python-multipart 엔터
 from fastapi.staticfiles import StaticFiles
 from typing import Annotated
 import sqlite3
@@ -75,6 +74,20 @@ async def get_image(item_id):
                               """).fetchone()[0] #1개만 가져옴
     #16진법을 2진법으로 바꿔서 응답반환
     return Response(content=bytes.fromhex(image_bytes), media_type='image/*')
+
+# 회원가입 요청
+@app.post('/signup')
+def signup(id:Annotated[str, Form()], 
+           password:Annotated[str, Form()],
+           name:Annotated[str, Form()], 
+           email:Annotated[str, Form()], 
+           phone:Annotated[int, Form()]):
+    cur.execute(f"""
+                INSERT INTO users(id, password, name, email, phone)
+                VALUES('{id}','{password}','{name}','{email}',{phone})
+                """)
+    con.commit()
+    return '200'
 
 # root패스는 맨밑에 작성
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")

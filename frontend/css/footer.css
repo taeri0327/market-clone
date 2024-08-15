@@ -20,6 +20,25 @@ footer {
   cursor: pointer;
 }
 
+@media (min-width: 400px) {
+  .footer-icons {
+    margin: 0px 17px;
+  }
+}
+
+.footer-chatting-link {
+  text-decoration: underline rgba(0, 0, 0, 0);
+  color: black;
+}
+
+.footer-signup-link {
+  text-decoration: none;
+}
+.footer-icons p {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes icons-둥둥 {
   0% {
     transform: translateY(0px);
@@ -38,6 +57,7 @@ footer {
 .footer-icons img {
   width: 27px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .footer-icons:hover img {
   animation: 2s icons-둥둥;
@@ -119,4 +139,42 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
+}
+
+/* chatting footer */
+.footer-chat {
+  background-color: #f2f3f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.footer-chatting {
+  background-color: white;
+  width: 80%;
+  border-radius: 20px;
+  color: #b7b8b9;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  line-height: 20px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.footer-chatting__text {
+  border: 0px;
+  width: 100%;
+  cursor: text;
+}
+
+.footer-chat img {
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .footer-chat {
+    display: none;
+  }
 }
