@@ -71,9 +71,22 @@ const renderData = (data) => {
 
 // 서버로부터 index.html의 주석처리부분의 list(array)를 받아옴
 const fetchList = async () => {
-  const res = await fetch("/items");
+  const accessToken = window.localStorage.getItem("token");
+  const res = await fetch("/items", {
+    //accessToken이라는 값을 갖는
+    //authorization이라는 header를 추가
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+  if (res.status === 401) {
+    alert("로그인이 필요합니다.");
+    window.location.pathname = "/login.html";
+    return;
+  }
+
   const data = await res.json();
   renderData(data);
 };
-
+//items호출
 fetchList();
