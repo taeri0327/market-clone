@@ -1,0 +1,206 @@
+header {
+  padding: 0;
+}
+
+.write-header {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  background-color: white;
+}
+
+.write-header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+
+.write-header__box-column {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.write-header__box-column img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.write-header__box-column p {
+  margin: 0;
+  text-align: center;
+}
+
+.write-header__box-column:nth-child(2) p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.write-header__box-column:nth-child(3) p {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.write-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding-top: 50px;
+}
+
+.write-wrap-mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.write-main-child:first-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.write-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.write-img-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.write-img-box label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding-top: 33px;
+  padding-left: 6px;
+  top: 0;
+  left: 0;
+}
+
+.write-img-box div {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 120px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: gray;
+}
+
+.write-img-box div input {
+  margin-left: -73px;
+  line-height: 50px;
+}
+
+.write-main-child:not(:first-child) {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 90%;
+}
+
+.write-main-child:not(:first-child) label {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.write-main-child textarea {
+  height: 100px;
+}
+
+.write-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.write-submit-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.write-footer button {
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  background-color: #fc6e08;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.media-info-msg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  top: -10px;
+  color: white;
+  background-color: red;
+}
+
+.media-info-msg div {
+  padding-left: 30vw;
+  padding-top: 45vh;
+}
+
+.media-info-msg img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.media-info-msg span {
+  width: 500px;
+  margin-top: -30px;
+  font-weight: bold;
+  display: block;
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .media-info-msg {
+    display: none;
+  }
+}

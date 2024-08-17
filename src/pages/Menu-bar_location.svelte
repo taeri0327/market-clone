@@ -1,0 +1,85 @@
+<header class="menu-bar__location-header">
+  <div class="menu-bar__location-headerdiv">
+    <div class="close_button">
+      <a href="/">
+        <img src="./assets/X-mark.svg" alt="closebutton" />
+      </a>
+    </div>
+    <div class="titlebox">
+      <p>내 동네 설정</p>
+    </div>
+    <div class="question-mark">
+      <img src="./assets/questionmark.svg" alt="questionmark" />
+    </div>
+  </div>
+</header>
+
+<main class="menu-bar__location-main">
+  <div class="map-box">
+    <div id="map">
+      <iframe
+        title="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12661.36618287218!2d127.02837405872441!3d37.49986190289119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3ffa284bd21%3A0xdd44ca279199d5d5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5k!5e0!3m2!1sko!2skr!4v1723028144343!5m2!1sko!2skr"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</main>
+
+<footer class="menu-bar__location-footer">
+  <div class="footer-map-select">
+    <div class="my-town">
+      <p>내 동네</p>
+    </div>
+    <div class="select-town">
+      <div class="select-town1">
+        <div class="select-town1_left">
+          <p>역삼1동</p>
+        </div>
+        <div class="select-town1_right">
+          <p>X</p>
+        </div>
+      </div>
+      <div class="select-town2">
+        <p>+</p>
+      </div>
+    </div>
+    <div class="range">
+      <div class="range-top">
+        <label for="customRange3" class="form-label"></label>
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="5"
+          step="1.25"
+          id="customRange3"
+        />
+      </div>
+      <div class="range-bottom">
+        <div class="range-bottom_left">
+          <p>가까운 동네</p>
+        </div>
+        <div class="range-bottom_left">
+          <p>먼 동네</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-info-msg">
+    <div>
+      <img src="alert.png" alt="alert" />
+      <span>화면 사이즈를 줄여주세요.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script> -->

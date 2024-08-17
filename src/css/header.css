@@ -1,0 +1,199 @@
+/* 헤더바 */
+header {
+  border-bottom: 1px solid #feffff;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+/* 인포바 */
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 5px 10px;
+}
+
+.info-bar__time {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.info-bar__icons img {
+  width: 17px;
+}
+/* 메뉴바 */
+.menu-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.menu-bar__location {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  width: 85px;
+}
+
+.menu-bar__location-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-bar__location img {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+.menu-bar__icons img {
+  width: 22px;
+  margin-left: 5px;
+}
+
+/* menu-bar__location 헤더 */
+.menu-bar__location-header {
+  width: 100vw;
+  height: 50px;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px;
+}
+
+.menu-bar__location-headerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 0 10px;
+  height: 100%;
+}
+
+.menu-bar__location-header img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.menu-bar__location-headerdiv .titlebox {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* chatting header */
+.header-chat {
+  position: fixed;
+  background-color: #fdfdfd;
+  margin-top: 0;
+  opacity: 1;
+}
+
+@media (min-width: 500px) {
+  .header-chat {
+    opacity: 0;
+  }
+}
+
+/* chat메뉴바 */
+.chat-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.chat-menu-bar__back {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+}
+
+.chat-menu-bar__back img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.chat-menu-bar .back-icon__basealertbox {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.chat-menu-bar .back-icon__basealert {
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .chat-menu-bar .back-icon__basealertbox {
+    opacity: 0;
+  }
+}
+
+.chat-menu-bar img {
+  cursor: pointer;
+}
+
+.chat-menu-bar__icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 70px;
+}
+
+.chat-menu-bar__icons img {
+  width: 22px;
+  margin-left: 5px;
+}
+
+.chat-menu-bar__frofile-namebox {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.chat-menu-bar__frofile-temp {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.chat-menu-bar__frofile-answer {
+  font-size: 10px;
+  color: #b7b8b9;
+  margin-top: 2px;
+}
+
+/* 상단item */
+
+.chat-item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 10px 0;
+  height: 70px;
+  box-sizing: content-box;
+}
+.chat-item__topbox {
+  display: flex;
+  justify-content: left;
+  width: 100vw;
+  left: 0;
+}
+
+.chat-item__topbox img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.chat-item__topbox-text {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.chat-item__topbox-text p:first-child {
+  color: #5d5d5d;
+  margin-bottom: 10px;
+}
